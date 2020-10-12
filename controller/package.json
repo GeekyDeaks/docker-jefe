@@ -1,0 +1,19 @@
+{
+  "name": "controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "debug": "^4.2.0",
+    "dockerode": "^3.2.1",
+    "express": "^4.17.1",
+    "fetch": "^1.1.0",
+    "mocha": "^8.1.3"
+  }
+}

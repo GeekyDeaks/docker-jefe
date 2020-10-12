@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  diag:
+    build: ./diag
+    hostname: diag
+    networks:
+      - frontend
+      - backend
+  echo:
+    build: ./http-echo
+    hostname: echo
+    networks:
+      - frontend
+      - backend
+    ports: 
+      - "3000:3000"
+  mongo:
+    image: mongo
+    networks:
+      - backend
+
+networks:
+  frontend:
+  backend:
